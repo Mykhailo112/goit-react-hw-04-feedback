@@ -42,7 +42,7 @@ export const App = () => {
           onLeaveFeedback={onLeaveFeedback}
         />
       </Section>
-      {countTotalFeedback === 0 ? (
+      {countTotalFeedback() === 0 ? (
         <Notification message="There is no feedback"></Notification>
       ) : (
         <Section title="Statistics">
